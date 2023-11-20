@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants at Door</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Restaurant Booking Website </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bookings">Bookings</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-dark text-white py-4">
+        <div class="container">
+            <h1>Restaurants at Door</h1>
+        </div>
+    </header>
+
+    <!-- Restaurant Feed Section -->
+    <section id="restaurants-feed" class="restaurant-feed container">
+        <!-- Restaurant cards will be dynamically added here using JavaScript -->
+    </section>
+
+    <!-- Button to View All Restaurants -->
+    <div class="container text-center my-4">
+        <a href="#" class="btn btn-primary">View All Restaurants</a>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <br>
+        <br>
+        <p>Welcome to Restaurants at Door, your go-to platform for discovering and booking the finest dining
+            experiences. We are passionate about connecting food enthusiasts with a diverse range of restaurants, offering
+            an array of culinary delights to satisfy every palate.</p>
+        
+        <p>Our mission is to make dining out an enjoyable and seamless experience. Whether you're searching for a cozy cafe,
+            a family-friendly eatery, or a fine dining restaurant for a special occasion, Restaurants at Door
+            has you covered.</p>
+        
+        <p>At Restaurants at Door, we believe in the power of great food to bring people together. Our
+            platform showcases a carefully curated selection of restaurants known for their exceptional cuisine, warm
+            ambiance, and top-notch service. We strive to create a community of food lovers who appreciate the artistry of
+            each culinary creation.</p>
+        
+        <p>Explore our restaurant listings, discover special offers, and easily make reservations with just a few clicks. We
+            are dedicated to enhancing your dining experience and providing you with a seamless way to savor the best
+            flavors in town.</p>
+        
+        <p>Thank you for choosing Restaurants at Door. We look forward to being a part of your culinary
+            adventures!</p>
+        <!-- ... (existing content) ... -->
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <br><br>
+            <p>Email: info@restaurantatdoor.com</p>
+            <p>Phone: 011 267863 / 9727231878</p>
+            <!-- ... (existing content) ... -->
+        </div>
+    </section>
+
+    <!-- Confirmed Bookings Section -->
+    <section id="bookings" class="container">
+        <h2>Confirmed Bookings</h2>
+        <div id="bookings-list">
+            <!-- Displayed when there are no bookings -->
+            <p id="no-bookings-message">No bookings have been made yet.</p>
+            <!-- Bookings will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <h2>Confirm Booking</h2>
+            <p>Are you sure you want to book a table at <span id="booking-restaurant-name"></span> ? </p>
+            <p>Date: <input type="text" id="booking-date" placeholder="Enter date"></p>
+            <p>Time: <input type="text" id="booking-time" placeholder="Enter time"></p>
+            <p>Number of Guests: <input type="number" id="booking-guests" placeholder="Enter guests"></p>
+            <button id="confirm-booking-btn">Confirm Booking</button>
+            <button id="cancel-booking-btn" onclick="closeBookingModal()">Cancel</button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Made By : </h5>
+                    <p>Swati Yadav<br>18 November 2003</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white"><i class="fab fa-facebook-f fa-2x mx-2"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-twitter fa-2x mx-2"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram fa-2x mx-2"></i></a>
+                    <!-- ... (existing content) ... -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap and jQuery Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="scripts.js"></script>
+
+    <!-- Menu Modal -->
+    <div id="menu-modal">
+        <div id="menu-content"></div>
+        <button onclick="closeMenuModal()">Close Menu</button>
+
+        <!-- <button class="btn-view-menu" onclick="openMenuModal(index)">View Menu</button> -->
+
+    </div>
+
+
+  
+</html>
+
+<script>
+    function openPage(pageName) {
+        window.open(`${pageName}.html`, "_blank");
+    }
+</script>

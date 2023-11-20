@@ -1,0 +1,385 @@
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Restaurant card styles */
+.restaurant-feed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.restaurant-card {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.restaurant-card:hover {
+    transform: scale(1.05);
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.restaurant-card h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.restaurant-card p {
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+.book-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.book-btn:hover {
+    background-color: #218838;
+}
+
+.btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+/* Footer styles */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+}
+
+/* Modal styles */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #343a40;
+    color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+/* Modal styles */
+.modal-footer {
+    border-top: 1px solid #ddd;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+/* Styling for the menu page (menu.html) */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Styling for About, Contact, and Bookings pages */
+.container {
+    margin-top: 50px;
+}
+
+/* Additional styling for the footer social icons */
+.footer-social-icons {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.footer-social-icons a {
+    color: #fff;
+    margin-left: 10px;
+}
+
+/* Updated styling for the menu modal (view menu popup)*/
+#menu-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.9);
+    padding: 75px ;
+    max-width: 100%;
+    max-height: 100%;
+    width: 1200px;
+    height: 400px;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+#menu-content {
+    max-height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.modal-header {
+    background-color: #343a40;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-header h2 {
+    margin: 0;
+} 
+
+
+
+
+
+
+
+/* Styling for menu items in the view menu popup */
+/* .menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Add these styles to your existing styles.css file */
+
+
+
+
+
+
+/* Styling for the "View Menu" button */
+.btn-view-menu {
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-view-menu:hover {
+    background-color: #292d31;
+}
+
+/* Updated styles for menu items */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+} */
+
+
+
+
+/* Add these styles for the Confirm Booking modal */
+#booking-modal {
+    display: none;
+    position: relative;
+    top: 60%;
+    bottom: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    width: 1200px;
+    background: #ffffff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 3);
+    border-radius: 10px;
+}
+
+.modal-content {
+    overflow: hidden;
+    
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-header h2 {
+    margin: 0;
+}
+
+.close-modal {
+    cursor: pointer;
+    color: #fff;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    border-top: 1px solid #ddd;
+    padding: 20px;
+    text-align: right;
+}
+
+#booking-restaurant-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#booking-date,
+#booking-time,
+#booking-guests {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#confirm-booking-btn,
+#cancel-booking-btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#confirm-booking-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#confirm-booking-btn:hover {
+    background-color: #218838;
+    
+}
+
+#cancel-booking-btn {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#cancel-booking-btn:hover {
+    background-color: #5a6268;
+}
+
+/* Add these styles for Confirmed Bookings section */
+#bookings-list {
+    margin-top: 20px;
+}
+
+.booking-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .restaurant-card {
+        width: 100%;
+    }
+
+    .buttons-wrapper {
+        flex-direction: column;
+    }
+
+
+    #menu-modal {
+         max-width: 80%;
+    }
+}
+
+

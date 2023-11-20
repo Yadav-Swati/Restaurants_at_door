@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>Restaurant Menu</h1>
+        <div id="menu" class="mt-4">
+            <!-- Menu items will be dynamically added here using JavaScript -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Sample data for the menu (replace with actual menu data)
+        const menuItems = [
+           { name: "Appetizer", price: "400 Rs" },
+            { name: "Main Course", price: "1500 Rs" },
+            { name: "Soups", price: "200 Rs" },
+            { name: "Dessert", price: "600 Rs" },
+            { name: "Beverages", price: "MRP" },
+            // Add more menu items as needed
+        ];
+
+        // Function to dynamically create menu items
+        function createMenuItems() {
+            const menuContainer = document.getElementById("menu");
+
+            menuItems.forEach(item => {
+                const menuItem = document.createElement("div");
+                menuItem.classList.add("mb-3");
+
+                const itemName = document.createElement("h4");
+                itemName.textContent = item.name;
+
+                const itemPrice = document.createElement("p");
+                itemPrice.textContent = `Price: ${item.price}`;
+
+                menuItem.appendChild(itemName);
+                menuItem.appendChild(itemPrice);
+
+                menuContainer.appendChild(menuItem);
+            });
+        }
+
+        // Call the function to generate menu items on page load
+        window.onload = createMenuItems;
+    </script>
+</body>
+
+</html>
