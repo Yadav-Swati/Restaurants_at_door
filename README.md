@@ -1,4 +1,4 @@
-# Restaurants_at_door (Restaurant Booking website)
+# Restaurants at door       (Restaurant Booking website)
 
 
 This project is a simple restaurant website that provides information about various restaurants, their menus, and allows users to make bookings.
